@@ -4,6 +4,7 @@ using UnityEngine;
 
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 #endif
 
@@ -77,13 +78,24 @@ namespace StarterAssets
 
 		private void OnApplicationFocus(bool hasFocus)
 		{
-			SetCursorState(cursorLocked);
+			//SetCursorState(cursorLocked);
 		}
 
 		private void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
+
+        private void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.Tab))
+			{
+				
+				SetCursorState(cursorLocked);
+				cursorLocked = !cursorLocked;
+
+            }
+        }
 
     }
 	

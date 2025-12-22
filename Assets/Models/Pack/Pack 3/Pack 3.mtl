@@ -1,0 +1,546 @@
+newmtl Handle1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1_diff.png
+map_Kd Handle1_diff.png
+map_d Handle1_diff.png
+
+newmtl Handle10Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle10_diff.png
+map_Kd Handle10_diff.png
+map_d Handle10_diff.png
+
+newmtl Handle45Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle45_diff.png
+map_Kd Handle45_diff.png
+map_d Handle45_diff.png
+
+newmtl Handle2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle2_diff.png
+map_Kd Handle2_diff.png
+map_d Handle2_diff.png
+
+newmtl Handle8Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle8_diff.png
+map_Kd Handle8_diff.png
+map_d Handle8_diff.png
+
+newmtl Handle20Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle20_diff.png
+map_Kd Handle20_diff.png
+map_d Handle20_diff.png
+
+newmtl Handle4Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle4_diff.png
+map_Kd Handle4_diff.png
+map_d Handle4_diff.png
+
+newmtl 133Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka 133_diff.png
+map_Kd 133_diff.png
+map_d 133_diff.png
+
+newmtl Handle5Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle5_diff.png
+map_Kd Handle5_diff.png
+map_d Handle5_diff.png
+
+newmtl 205Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka 205_diff.png
+map_Kd 205_diff.png
+map_d 205_diff.png
+
+newmtl Handle49Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle49_diff.png
+map_Kd Handle49_diff.png
+map_d Handle49_diff.png
+
+newmtl Handle16Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle16_diff.png
+map_Kd Handle16_diff.png
+map_d Handle16_diff.png
+
+newmtl Handle6Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle6_diff.png
+map_Kd Handle6_diff.png
+map_d Handle6_diff.png
+
+newmtl Handle53Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle53_diff.png
+map_Kd Handle53_diff.png
+map_d Handle53_diff.png
+
+newmtl Handle7Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle7_diff.png
+map_Kd Handle7_diff.png
+map_d Handle7_diff.png
+
+newmtl Handle38Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle38_diff.png
+map_Kd Handle38_diff.png
+map_d Handle38_diff.png
+
+newmtl Handle12Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle12_diff.png
+map_Kd Handle12_diff.png
+map_d Handle12_diff.png
+
+newmtl 43Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka 43_diff.png
+map_Kd 43_diff.png
+map_d 43_diff.png
+
+newmtl Handle13Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle13_diff.png
+map_Kd Handle13_diff.png
+map_d Handle13_diff.png
+
+newmtl Handle15Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle15_diff.png
+map_Kd Handle15_diff.png
+map_d Handle15_diff.png
+
+newmtl Handle43Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle43_diff.png
+map_Kd Handle43_diff.png
+map_d Handle43_diff.png
+
+newmtl Handle18Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle18_diff.png
+map_Kd Handle18_diff.png
+map_d Handle18_diff.png
+
+newmtl Handle22Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle22_diff.png
+map_Kd Handle22_diff.png
+map_d Handle22_diff.png
+
+newmtl Handle24Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle24_diff.png
+map_Kd Handle24_diff.png
+map_d Handle24_diff.png
+
+newmtl Handle25Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle25_diff.png
+map_Kd Handle25_diff.png
+map_d Handle25_diff.png
+
+newmtl Handle27Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle27_diff.png
+map_Kd Handle27_diff.png
+map_d Handle27_diff.png
+
+newmtl Handle29Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle29_diff.png
+map_Kd Handle29_diff.png
+map_d Handle29_diff.png
+
+newmtl Handle33Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle33_diff.png
+map_Kd Handle33_diff.png
+map_d Handle33_diff.png
+
+newmtl Handle39Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle39_diff.png
+map_Kd Handle39_diff.png
+map_d Handle39_diff.png
+
+newmtl Handle41Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle41_diff.png
+map_Kd Handle41_diff.png
+map_d Handle41_diff.png
+
+newmtl Handle42Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle42_diff.png
+map_Kd Handle42_diff.png
+map_d Handle42_diff.png
+
+newmtl 193Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka 193_diff.png
+map_Kd 193_diff.png
+map_d 193_diff.png
+
+newmtl Handle63Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle63_diff.png
+map_Kd Handle63_diff.png
+map_d Handle63_diff.png
+
+newmtl Handle64Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle64_diff.png
+map_Kd Handle64_diff.png
+map_d Handle64_diff.png
+
+newmtl 247Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka 247_diff.png
+map_Kd 247_diff.png
+map_d 247_diff.png
+
+newmtl Handle75Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle75_diff.png
+map_Kd Handle75_diff.png
+map_d Handle75_diff.png
+
+newmtl Handle76Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle76_diff.png
+map_Kd Handle76_diff.png
+map_d Handle76_diff.png
+
+newmtl 283Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka 283_diff.png
+map_Kd 283_diff.png
+map_d 283_diff.png
+
+newmtl Handle83Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle83_diff.png
+map_Kd Handle83_diff.png
+map_d Handle83_diff.png
+
