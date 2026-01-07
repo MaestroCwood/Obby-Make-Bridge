@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public int currentGenerateCountCoin;
 
     public int curentCountCoin { get; private set; }
 
@@ -20,11 +21,15 @@ public class GameManager : MonoBehaviour
         else Destroy(gameObject);
 
 
-        
+#if(!UNITY_EDITOR)
+        Debug.unityLogger.logEnabled = false;
+
+#endif
     }
 
     private void Start()
     {
+        
         curentCountCoin = PlayerPrefs.GetInt("Coin");
         OnUpdateCointCoin?.Invoke(this, curentCountCoin);
     }
@@ -71,5 +76,17 @@ public class GameManager : MonoBehaviour
     public void BuyBridge()
     {
 
+    }
+
+
+    public int GetCurrentGenerate()
+    {
+       
+        return currentGenerateCountCoin;
+    }
+
+    public void SetCountGenerateCoin(int countCoin)
+    {
+        currentGenerateCountCoin = countCoin;
     }
 }

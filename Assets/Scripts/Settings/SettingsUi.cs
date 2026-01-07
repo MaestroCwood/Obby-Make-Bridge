@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class SettingsUi : MonoBehaviour
 {
     [SerializeField] Slider sliderSensetivity;
+  
 
     [SerializeField] YGTouchscreen yGTouchscreen;
     [SerializeField] float minValueSensetivity;
@@ -19,7 +20,7 @@ public class SettingsUi : MonoBehaviour
         yGTouchscreen.SetSensitivity(average);
         sliderSensetivity.value = average;
 
-        gameObject.SetActive(false);
+      
     }
 
     public void SetSens(float sens)

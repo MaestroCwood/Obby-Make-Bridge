@@ -4,7 +4,6 @@ using UnityEngine;
 public class GenerateCoin : MonoBehaviour
 {
     [SerializeField] float delayGenerate = 5f;
-    [SerializeField] int countGenerate = 5;
     [SerializeField] GameObject icoFx;
     [SerializeField] GameObject destroyFx;
  
@@ -12,11 +11,13 @@ public class GenerateCoin : MonoBehaviour
 
 
 
-
+    int countGenerate;
 
     private void Start()
     {
         StartCoroutine(Generator());
+
+        countGenerate = GameManager.instance.GetCurrentGenerate();
     }
     IEnumerator Generator()
     {
@@ -27,8 +28,9 @@ public class GenerateCoin : MonoBehaviour
                 GameObject go = Instantiate(icoFx, transform.position, Quaternion.identity);
 
                 Animate(go);
-                GameEvents.OnGenerateCoin?.Invoke(countGenerate);
-                yield return new WaitForSeconds(delayGenerate);
+                GameEvents.OnGenerateCoin?.Invoke(GameManager.instance.GetCurrentGenerate());
+                float ranDelay = Random.Range(delayGenerate, delayGenerate + 5);
+                yield return new WaitForSeconds(ranDelay);
             }
 
             yield return null;
@@ -48,5 +50,16 @@ public class GenerateCoin : MonoBehaviour
             Destroy(go, 0.1f);
         });
         go.transform.LeanRotateY(920f, rand).setEase(LeanTweenType.linear);
+    }
+
+
+    public void SetCointGenerateCoin(int coint)
+    {
+        countGenerate = coint;
+    }
+
+    public int GetCurrentGenetate()
+    {
+        return countGenerate;
     }
 }

@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 59d78edf23e58a744a3986849ca45850
+AssetOrigin:
+  serializedVersion: 1
+  productId: 327226
+  packageName: 'Italian Brainrot Models 3D - [Pack 3]'
+  packageVersion: 1.0
+  assetPath: Assets/Italian_Brainrot_Models_3D_pack_3_/Model/Italian_Brainrot3D_pack_3_models_.fbx
+  uploadId: 776029
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #470
+    second: {fileID: 2100000, guid: 67306ef73f7bdde40801adf282e261a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #471
+    second: {fileID: 2100000, guid: 4976d524b3f303141bf88b1de41c7099, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #472
+    second: {fileID: 2100000, guid: af0641cfd6dea4a49b259eea8c28e20b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #473
+    second: {fileID: 2100000, guid: 29ddc4f7cfa65084f8b28e7dfa52d93a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #474
+    second: {fileID: 2100000, guid: 5c2977ea35f992f47a07e173e181ce29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #475
+    second: {fileID: 2100000, guid: f2ffbb3daadf9e645ad8a64d0876bb5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #476
+    second: {fileID: 2100000, guid: 64628badd36cd444cbedc94764c22a98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #477
+    second: {fileID: 2100000, guid: 8e46b748b3a42cc41bb0a90abe61e68c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #478
+    second: {fileID: 2100000, guid: 9c847e09e56ba4d44994551e131d7adc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #524
+    second: {fileID: 2100000, guid: 56d1d7278f7275849828d54b150ec9ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #591
+    second: {fileID: 2100000, guid: 6a0a2c5c4f53deb43904e26197a0a931, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #592
+    second: {fileID: 2100000, guid: 9d7842d27908446449012285d93ebcbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #593
+    second: {fileID: 2100000, guid: 3c2bfbdea96393f40a4aff5f2c70355c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #594
+    second: {fileID: 2100000, guid: b04de6b29ce3a1a4f99ce946fbf2c3bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #595
+    second: {fileID: 2100000, guid: 443ba1f4b02e8cd4384315c884e811a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #596
+    second: {fileID: 2100000, guid: aea10381287a9fc48a9b4889ad4c5106, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #597
+    second: {fileID: 2100000, guid: 2673a6af409e51343864f5fa760dc870, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_1_BasMap_
+    second: {fileID: 2800000, guid: 795fcad8861da3c42ab4e05cc5bc7f3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_2_BaseMap_1_
+    second: {fileID: 2800000, guid: fcb8e3d019c42fc4e8450dade89bb051, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_2_BaseMap_2_
+    second: {fileID: 2800000, guid: bd57b41ee758fac41841b3bde5ce419e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_2_BaseMap_3_
+    second: {fileID: 2800000, guid: b7dc0f3ac510972429fb57e796d434e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_3_BasMap_
+    second: {fileID: 2800000, guid: 781d09b8f2bb36141834a3a6edbc5069, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_4_BaseMap_1_
+    second: {fileID: 2800000, guid: 8a93d4d68793e354f8e6c823df932e9f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_4_BaseMap_2_
+    second: {fileID: 2800000, guid: 035cacb257c0b7745994ea21cdce3725, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_5_BaseMap_
+    second: {fileID: 2800000, guid: b3b716eb20d46b54f83c7f24dbc7aa5d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_5_BaseMap_2_
+    second: {fileID: 2800000, guid: 3afb1e9f1e71d9b4da66ef226f3ed923, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_6_BaseMap_
+    second: {fileID: 2800000, guid: be59baa1ce7ffb5438d3206c5146a9f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_1
+    second: {fileID: 2800000, guid: f8c3ff860b31f6844a7c54e647850d3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_2
+    second: {fileID: 2800000, guid: 1caa7eebca33b4d49a0835b5201ac39c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_3
+    second: {fileID: 2800000, guid: 2dbe43db1bcb1044a816b3b830097629, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_4
+    second: {fileID: 2800000, guid: 32b3f9c5ec1a2cb428a09781a61dce07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_5
+    second: {fileID: 2800000, guid: 4ab2f1e04e2187748a49bdf33a7fabd3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_6
+    second: {fileID: 2800000, guid: 641177f596a1b364e9b86a505035cd4f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Italian_Brainrot3D_7_BaseMap_7
+    second: {fileID: 2800000, guid: e5655f2fe17914d4a8833458de0df735, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patapim_00x1
+    second: {fileID: 2800000, guid: a715cc3274459b14994991ac3393e2e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patapim_00x2
+    second: {fileID: 2800000, guid: 3b6db43597816604ba6ca825f64a8094, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

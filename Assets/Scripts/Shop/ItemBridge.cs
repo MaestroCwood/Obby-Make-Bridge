@@ -101,6 +101,7 @@ public class ItemBridge : MonoBehaviour
             buyOkObj.SetActive(true);
             PlayerPrefs.SetInt($"{prefix}{IDBridge}", 1);
             GameManager.instance.DecreamenteCoin(priceBridge);
+            GameEvents.OnSelectedBridge?.Invoke(IDBridge, icoCurrentBridgeElement);
             Debug.Log("bued!!!!");
         } else if(!isBued)
         {

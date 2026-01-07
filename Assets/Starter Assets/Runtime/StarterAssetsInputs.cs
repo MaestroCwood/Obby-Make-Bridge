@@ -5,6 +5,7 @@ using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.Windows;
 
 #endif
 
@@ -26,12 +27,13 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
         // my reference
-       // public YGTouchscreen touchscreen;
+        // public YGTouchscreen touchscreen;
+        public event System.Action OnStartJumpPlayer;
 
 #if ENABLE_INPUT_SYSTEM
 
-      
-    
+
+
         public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
@@ -47,7 +49,12 @@ namespace StarterAssets
         public void OnJump(InputValue value)
 		{
 			JumpInput(value.isPressed);
-		}
+          
+            
+                OnStartJumpPlayer?.Invoke();
+			Debug.Log("JUMP");
+            
+        }
 
 		public void OnSprint(InputValue value)
 		{
@@ -88,7 +95,7 @@ namespace StarterAssets
 
         private void Update()
         {
-            if(Input.GetKeyDown(KeyCode.Tab))
+            if(UnityEngine.Input.GetKeyDown(KeyCode.Tab))
 			{
 				
 				SetCursorState(cursorLocked);

@@ -1,4 +1,6 @@
-﻿ using UnityEngine;
+﻿
+using UnityEngine;
+
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -124,7 +126,9 @@ namespace StarterAssets
 #endif
             }
         }
-
+        //my events
+        public event System.Action OnLandPlayer;
+      
 
         private void Awake()
         {
@@ -313,12 +317,16 @@ namespace StarterAssets
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
-                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                   
+                   
+                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);  
 
                     // update animator if using character
                     if (_hasAnimator)
                     {
                         _animator.SetBool(_animIDJump, true);
+                   
+                        
                     }
                 }
 
@@ -393,10 +401,21 @@ namespace StarterAssets
 
         private void OnLand(AnimationEvent animationEvent)
         {
-            if (animationEvent.animatorClipInfo.weight > 0.5f)
+            if (animationEvent.animatorClipInfo.weight > 0.1f)
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                OnLandPlayer?.Invoke();
+
+                
             }
+        }
+
+        public void Teleport(Vector3 position)
+        {
+            _controller.enabled = false;
+            transform.position = position;
+            _verticalVelocity = 0f;
+            _controller.enabled = true;
         }
     }
 }

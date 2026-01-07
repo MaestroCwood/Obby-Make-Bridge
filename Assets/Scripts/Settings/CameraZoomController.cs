@@ -1,19 +1,22 @@
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 
 public class CameraZoomController : MonoBehaviour
 {
-    [SerializeField] private CinemachineCamera cinemachineCamera;
+    // [SerializeField] private CinemachineCamera cinemachineCamera;
+    [SerializeField] private CinemachineOrbitalFollow orbitalFollow;
 
     [Header("Zoom")]
     [SerializeField] private float zoomSpeed = 1f;
     [SerializeField] private float smooth = 10f;
-    [SerializeField] private float minFov = 30f;
-    [SerializeField] private float maxFov = 70f;
+    [SerializeField] private float minRadius = 30f;
+    [SerializeField] private float maxRaduis = 70f;
 
-    private float targetFov;
+    [SerializeField] Slider sliderMobileZoom;
+    private float targetRadius;
 
     private InputSystem_Actions inputSystem;
 
@@ -22,7 +25,15 @@ public class CameraZoomController : MonoBehaviour
         inputSystem = new InputSystem_Actions();
         inputSystem.UI.ScrollWheel.performed += OnScroll;
 
-        targetFov = cinemachineCamera.Lens.FieldOfView;
+     
+    }
+
+    private void Start()
+    {
+        sliderMobileZoom.minValue = minRadius;
+        sliderMobileZoom.maxValue = maxRaduis;
+
+        sliderMobileZoom.value = orbitalFollow.Radius;
     }
 
     private void OnEnable() => inputSystem.Enable();
@@ -31,16 +42,22 @@ public class CameraZoomController : MonoBehaviour
     private void OnScroll(InputAction.CallbackContext ctx)
     {
         float scroll = ctx.ReadValue<Vector2>().y;
-        targetFov -= scroll * zoomSpeed;
-        targetFov = Mathf.Clamp(targetFov, minFov, maxFov);
+        targetRadius -= scroll * zoomSpeed;
+        targetRadius = Mathf.Clamp(targetRadius, minRadius, maxRaduis);
+
+        sliderMobileZoom.SetValueWithoutNotify(targetRadius);
     }
 
     private void Update()
     {
-        float current = cinemachineCamera.Lens.FieldOfView;
-        cinemachineCamera.Lens.FieldOfView =
-            Mathf.Lerp(current, targetFov, Time.deltaTime * smooth);
+        float current = orbitalFollow.Radius;
+        orbitalFollow.Radius =
+            Mathf.Lerp(current, targetRadius, Time.deltaTime * smooth);
     }
 
+    public void MobileZoom(float newRadius)
+    {
 
+        targetRadius = Mathf.Clamp(newRadius, minRadius, maxRaduis);
+    }
 }

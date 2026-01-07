@@ -11,7 +11,9 @@ public class VisuaManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI warningMessageTxt;
     [SerializeField] GameObject warningPanelObj;
+    [SerializeField] GameObject arrowTargetHelper;
     [SerializeField] Image frame;
+    [SerializeField] GameObject arrowToStartMakeBridge;
     [SerializeField] Image currentIcoBridge;
     [SerializeField] ManagerMakeBridge makeManager;
 
@@ -36,11 +38,14 @@ public class VisuaManager : MonoBehaviour
 
     private void MakeManager_OnWarningMessgeDistance(object sender, float e)
     {
-       
+
+        arrowToStartMakeBridge.gameObject.SetActive(true);
+        arrowTargetHelper.gameObject.SetActive(true);
         AnimateWarning();
-        string msg = language == "ru" ? "Ты слишком далеко от стройки" : " You Daleko";
+        string msg = language == "ru" ? "Ты слишком далеко от стройки" : " You're too far from the construction site";
         string distance = e.ToString("F1");
         warningMessageTxt.text = $"{msg} ({distance}M)";
+
     }
 
     private void OnDisable()
@@ -55,7 +60,7 @@ public class VisuaManager : MonoBehaviour
     {
         if (isAcriveWarningPanel) return;
         AnimateWarning();
-        string msg = language == "ru" ? "Тебе не хватает" : "Dont Have many";
+        string msg = language == "ru" ? "Тебе не хватает денег" : "You don't have enough money";
         string countDontHave = obj.ToString();
         warningMessageTxt.text = $"{msg} {countDontHave}";
 
@@ -102,6 +107,8 @@ public class VisuaManager : MonoBehaviour
                 {
                     warningPanelObj.SetActive(false);
                     isAcriveWarningPanel = false;
+                    arrowToStartMakeBridge.gameObject.SetActive(false);
+                    arrowTargetHelper.gameObject.SetActive(false);
                 });
             });
     }

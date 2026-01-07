@@ -19,7 +19,7 @@ public class DissoveController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-       
+       if(other.tag != "Player") return;
 
         FillBuyImage();
         FillDissoveEffect();
@@ -29,8 +29,8 @@ public class DissoveController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        
 
+        if (other.tag != "Player") return;
         ClearFillBuyImage();
         ClearFillDissoveEffect();
 

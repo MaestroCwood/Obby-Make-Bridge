@@ -109,5 +109,13 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
     {
         return -value;
     }
-    
+
+
+    public void ResetJoystick()
+    {
+        OutputPointerEventValue(Vector2.zero);
+        if (handleRect)
+            UpdateHandleRectPosition(Vector2.zero);
+    }
+
 }
