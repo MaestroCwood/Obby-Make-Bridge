@@ -1,0 +1,80 @@
+newmtl Cube0261Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.396078 0.396078 0.396078 
+
+d 1
+
+Ns 0
+
+map_Ka Cube0261_diff.png
+map_Kd Cube0261_diff.png
+map_d Cube0261_diff.png
+
+newmtl Eye1Mtl
+Material Color
+Ka 0.180144 0 0
+Kd 0.180144 0 0
+Ks 0.014129 0 0 
+
+d 1
+
+Ns 0
+
+map_Ka Eye1_diff.png
+map_Kd Eye1_diff.png
+map_d Eye1_diff.png
+
+map_Bump Eye1_nmap.png
+
+map_Ns Eye1_spec.png
+
+newmtl Meshesjeffthehead2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.396078 0.396078 0.396078 
+
+d 0.501961
+
+Ns 0
+
+map_Ka Meshesjeffthehead2_diff.png
+map_Kd Meshesjeffthehead2_diff.png
+map_d Meshesjeffthehead2_diff.png
+
+newmtl Meshesjeffthehead1Mtl
+Material Color
+Ka 0.940601 0.940601 0.940601
+Kd 0.940601 0.940601 0.940601
+Ks 0.372552 0.372552 0.372552 
+
+d 1
+
+Ns 0
+
+newmtl Part1Mtl
+Material Color
+Ka 0.940601 0.940601 0.940601
+Kd 0.940601 0.940601 0.940601
+Ks 0.0848385 0.0848385 0.0848385 
+
+d 1
+
+Ns 0
+
+newmtl Part2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0901961 0.0901961 0.0901961 
+
+d 0.901961
+
+Ns 0
+
+map_Ka Part2_diff.png
+map_Kd Part2_diff.png
+map_d Part2_diff.png
+
