@@ -24737,6 +24737,7 @@ MonoBehaviour:
   uiObjectTargetDisabled:
   - {fileID: 0}
   - {fileID: 0}
+  isMoveHome: 0
 --- !u!1 &4575751302943681918
 GameObject:
   m_ObjectHideFlags: 0

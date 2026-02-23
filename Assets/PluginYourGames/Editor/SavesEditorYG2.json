@@ -1,0 +1,21 @@
+{
+    "intExample": 5,
+    "strExample": "Hello!",
+    "boolExample": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "idSave": 8,
+    "IDskins": [
+        "0",
+        "0",
+        "2",
+        "3",
+        "4",
+        "0",
+        "6"
+    ],
+    "skinHuggi": 1
+}

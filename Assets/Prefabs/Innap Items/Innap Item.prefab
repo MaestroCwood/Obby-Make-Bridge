@@ -450,6 +450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skinObject: {fileID: 0}
   textPrice: {fileID: 9117062845784766355}
+  spriteRenderer: {fileID: 0}
+  priceCurrentItem: 0
 --- !u!1 &855951967480801651
 GameObject:
   m_ObjectHideFlags: 0

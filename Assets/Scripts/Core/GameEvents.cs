@@ -18,7 +18,11 @@ public class GameEvents : MonoBehaviour
     public static Action<int, Enum> OnTimeRewardedComplited;
 
     public static Action OnSplineStarted;
-  
+
+    public static Action OnPlayerTriggerHeadFear;
+
+    public static Action OnDiedEnemyHead;
+
 
 
 }

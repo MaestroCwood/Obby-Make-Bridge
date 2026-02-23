@@ -52,6 +52,7 @@ public class BuyInnAp : MonoBehaviour
 
         ActivateInnap.Instance.ApplySkin(skin);
         YG2.ConsumePurchaseByID(id);
+        PlayerPrefs.SetString("CurrentSkin", skin.Id);
     }
     private IdSkinGameObject FindSkinById(string id)
     {

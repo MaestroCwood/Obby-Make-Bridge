@@ -23,12 +23,37 @@ public class ActivateInnap : MonoBehaviour
      
     }
 
+    private void Start()
+    {
+        SetLastSaveSkin();
+    }
     private void OnProgressLoaded()
     {
         //Debug.Log("YG2 progress loaded, now checking saved skins...");
         LoadSavedSkin();
+
+        
     }
 
+
+    void SetLastSaveSkin()
+    {
+        string savedSkinId = PlayerPrefs.GetString("CurrentSkin", "0");
+
+        if (savedSkinId != "0")
+        {
+            var skin = skins.FirstOrDefault(x => x.Id == savedSkinId);
+
+            if (skin != null)
+            {
+                ApplySkin(skin);
+            }
+            else
+            {
+                Debug.LogWarning("Saved skin not found in skins list: " + savedSkinId);
+            }
+        }
+    }
     private void LoadSavedSkin()
     {
         for (int i = 0; i < skins.Count; i++)
@@ -69,5 +94,6 @@ public class ActivateInnap : MonoBehaviour
             //Debug.LogWarning("No Avatar set on skin: " + skin.Id);
         }
         CurrentSkin = skin; // сохраняем текущий активный
+        PlayerPrefs.SetString("CurrentSkin", skin.Id);
     }
 }
