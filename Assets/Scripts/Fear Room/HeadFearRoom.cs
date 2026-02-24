@@ -115,6 +115,7 @@ public class HeadFearRoom : MonoBehaviour
     void DestroyHead()
     {
         isLifeEnemy = false;
+        GameEvents.OnDiedEnemyHead?.Invoke();
         AudioManager.instance.PlayFx(3);
         Instantiate(fxDedtroy, new Vector3(agent.transform.position.x, 2, agent.transform.position.z), Quaternion.identity);
         Destroy(gameObject);

@@ -26,27 +26,34 @@ public class SahurController : MonoBehaviour
 
     [Header("Cinemachine Shake")]
     [SerializeField] CinemachineImpulseSource impulseSource;
+    [SerializeField] AudioClip[] audioClips;
+    [SerializeField] GameObject mimiMapSahur;
 
     private NavMeshAgent agent;
     private Animator animator;
 
     private Transform currentPatrolTarget;
 
+
+    AudioSource audioSource;
     private enum AIState { Patrol, Chase }
     private AIState state;
 
     Vector3 startPosPlayer;
 
+    float currentTimeDelayShake;
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
     {
         agent.stoppingDistance = 0.3f;
-        agent.autoBraking = true;   // Рекомендуется true для точной остановки у точек
+        agent.autoBraking = true;   
 
         currentPatrolTarget = pointA;
         agent.speed = patrolSpeed;
@@ -56,6 +63,7 @@ public class SahurController : MonoBehaviour
 
         startPosPlayer = playerController.transform.position;
         animator.SetBool("Run", true);
+        SwitchUiMiniMap(false);
     }
 
     private void Update()
@@ -72,6 +80,15 @@ public class SahurController : MonoBehaviour
                 ChaseState(distance);
                 break;
         }
+
+        if(state == AIState.Chase && currentTimeDelayShake > 1)
+        {
+            impulseSource?.GenerateImpulse();
+            PlaySahurSound(1);
+            currentTimeDelayShake = 0;
+        }
+
+        currentTimeDelayShake += Time.deltaTime;
     }
 
     void PatrolState(float distance)
@@ -81,8 +98,8 @@ public class SahurController : MonoBehaviour
         {
             state = AIState.Chase;
             agent.speed = chaseSpeed;
-             // Включаем анимацию бега
-            impulseSource?.GenerateImpulse();
+            PlaySahurSound(0);
+            SwitchUiMiniMap(true);
             return;
         }
 
@@ -112,6 +129,7 @@ public class SahurController : MonoBehaviour
             agent.speed = patrolSpeed;
             animator.SetBool("Run", true);   // <-- ИСПРАВЛЕНО: выключаем бег
             agent.SetDestination(currentPatrolTarget.position);
+            SwitchUiMiniMap(false);
             return;
         }
 
@@ -132,5 +150,16 @@ public class SahurController : MonoBehaviour
         {
             playerController.Teleport(startPosPlayer);
         }
+    }
+
+
+    void PlaySahurSound(int index)
+    {
+        audioSource.PlayOneShot(audioClips[index]);
+    }
+
+    void SwitchUiMiniMap(bool enabled)
+    {
+        mimiMapSahur.SetActive(enabled);
     }
 }

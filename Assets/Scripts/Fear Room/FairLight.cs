@@ -56,7 +56,7 @@ public class FairLight : MonoBehaviour
         SwitchFire(false, true);
         gameObject.transform.SetParent(playerHoldPos, false );
         transform.localPosition = Vector3.zero;
-        transform.localPosition = Vector3.up * 3.7f;
+        transform.localPosition = Vector3.up * 7.7f;
     }
 
     void SwitchFire(bool red, bool white)
